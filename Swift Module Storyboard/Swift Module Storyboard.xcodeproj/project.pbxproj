@@ -13,6 +13,7 @@
 		1ED80D9727467580009DDE01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ED80D9527467580009DDE01 /* Main.storyboard */; };
 		1ED80D9927467582009DDE01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ED80D9827467582009DDE01 /* Assets.xcassets */; };
 		1ED80D9C27467582009DDE01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ED80D9A27467582009DDE01 /* LaunchScreen.storyboard */; };
+		1ED80DA6274686FF009DDE01 /* MyPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 1ED80DA5274686FF009DDE01 /* MyPackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1ED80D9827467582009DDE01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1ED80D9B27467582009DDE01 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1ED80D9D27467582009DDE01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ED80DA3274675DA009DDE01 /* MyPackage */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MyPackage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ED80DA6274686FF009DDE01 /* MyPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +43,10 @@
 		1ED80D832746757F009DDE01 = {
 			isa = PBXGroup;
 			children = (
+				1ED80DA3274675DA009DDE01 /* MyPackage */,
 				1ED80D8E27467580009DDE01 /* Swift Module Storyboard */,
 				1ED80D8D27467580009DDE01 /* Products */,
+				1ED80DA4274686FF009DDE01 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +72,13 @@
 			path = "Swift Module Storyboard";
 			sourceTree = "<group>";
 		};
+		1ED80DA4274686FF009DDE01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -83,6 +95,9 @@
 			dependencies = (
 			);
 			name = "Swift Module Storyboard";
+			packageProductDependencies = (
+				1ED80DA5274686FF009DDE01 /* MyPackage */,
+			);
 			productName = "Swift Module Storyboard";
 			productReference = 1ED80D8C27467580009DDE01 /* Swift Module Storyboard.app */;
 			productType = "com.apple.product-type.application";
@@ -358,6 +373,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1ED80DA5274686FF009DDE01 /* MyPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MyPackage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1ED80D842746757F009DDE01 /* Project object */;
 }
